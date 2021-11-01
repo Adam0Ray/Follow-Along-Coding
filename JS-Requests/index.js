@@ -26,23 +26,23 @@ axios.get('https://marcusbassportfolioserver.herokuapp.com/customers')
     console.log('Error', error)
 })
 
-//POST     edits/puts information in the database
-// axios.post('https://marcusbassportfolioserver.herokuapp.com/customers', {
-//       'email': 'knockknock@icloud.com',
-//       'first_name': 'Who is there?',
-//       'last_name': 'Boo',
-//       'ip': 'Boo Who?',
-//       'latitude': 100100200,
-//       'longitude': 200200300,
-//       'created_at': '03/15/2019',
-//       'updated_at': '03/15/2019'
-// }) 
-// .then(response => {
-//     console.log('Response',response)
-// })
-// .catch(error => {
-//     console.log('Error', error)
-// })
+// POST     edits/puts information in the database
+axios.post('https://marcusbassportfolioserver.herokuapp.com/customers', {
+      'email': 'knockknock@icloud.com',
+      'first_name': 'Who is there?',
+      'last_name': 'Boo',
+      'ip': 'Boo Who?',
+      'latitude': 100100200,
+      'longitude': 200200300,
+      'created_at': '03/15/2019',
+      'updated_at': '03/15/2019'
+}) 
+.then(response => {
+    console.log('Response',response)
+})
+.catch(error => {
+    console.log('Error', error)
+})
 
 //PUT
 // axios.put('https://marcusbassportfolioserver.herokuapp.com/customers/1', {
